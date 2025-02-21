@@ -1,0 +1,35 @@
+
+.profile-div,
+.profile-div-gray,
+.profile-div-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+
+.profile-div {
+    background-color: white;
+}
+
+.profile-div-gray {
+    background-color: #e0e0e0;
+}
+
+.profile-div-green {
+    background-color: #d0f0c0;
+}
+
+
+.profile-image,
+.profile-image-gray,
+.profile-image-green {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
