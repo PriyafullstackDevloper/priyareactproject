@@ -7,7 +7,7 @@ export default class Header extends React.Component {
         return (
             <header className="header">
                 <div className="logo">
-                    <h1>IMDB</h1>
+                    <h1 className="c">IMDB</h1>
                 </div>
 
                 <div className="search-bar">

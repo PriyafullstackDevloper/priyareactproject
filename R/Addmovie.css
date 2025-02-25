@@ -1,58 +1,41 @@
-/* Navbar */
-.navbar {
+/* Add Movie Button Container */
+.addmovie {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #232f3e;
-  padding: 10px 20px;
-  color: white;
-  z-index: 1000;
+  justify-content: center;
 }
 
-/* Logo */
-.logo h1 {
-  margin: 0;
-  font-size: 24px;
+/* Add Movie Button Styling */
+.addmovie button {
+  background-color: orange ;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-}
-.search-bar {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  padding: 5px;
-  border-radius: 25px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  width: 60%;
-  transition: 0.3s ease-in-out;
-}
-
-/* Search Input */
-.search-bar input {
-  flex: 1;
-  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
   outline: none;
-  padding: 10px;
-  font-size: 16px;
-  color: #333;
+  margin-right: 55px;
 }
 
-/* Search Button */
-.search-button {
-  background: green;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 25px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
+/* Hover Effect */
+.addmovie button:hover {
+  background-color: rgb(241, 158, 51);
+  transform: scale(1.05);
 }
 
-.search-button:hover {
-  background: #e63946;
+/* Active Click Effect */
+.addmovie button:active {
+  background-color: rgb(241, 158, 51);
+  transform: scale(1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .addmovie button {
+      padding: 12px 18px;
+      font-size: 14px;
+  }
 }

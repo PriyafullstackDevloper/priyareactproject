@@ -1,0 +1,247 @@
+/* body */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: pink;
+    
+  }
+  
+  
+  
+  /* * Base styles for navbar */ 
+  .header{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 7px;
+  }
+  
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: gray;
+    min-width: 180px; /* Increased min-width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    justify-content: flex-end;
+  }
+  
+  .dropdown-content a {
+    color: #555;
+    padding: 14px 18px; /* Increased padding */
+    text-decoration: none;
+    display: block;
+    justify-content: flex-end;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* grid-container */
+  .project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+    padding: 10px;
+  
+    /* background-color: #555; */
+  }
+  
+  .project-section div {
+    background-color: whitesmoke;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    aspect-ratio: 1;
+    background-image: url(https://pngtree.com/freebackground/smoke-powder-atmosphere-color-gradient_926839.html);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+  }
+  
+  
+  .project-section div:hover {
+    border: solid 2px green;
+  }
+  
+  /* Image styles */
+  img {
+    height: 200px;
+    width: 200px;
+    border: 2px black solid;
+    box-shadow: 10px 5px 10px black;
+    border-radius: 30px;
+    filter: grayscale(20%);
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    filter: grayscale(0%);
+  }
+  
+  /* Button styles */
+  button {
+    color: whitesmoke;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: oldlace;
+  }
+  
+  /* Project section styles */
+  .project-section {
+    margin: 20px;
+  }
+  
+  .project {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .project img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .project button {
+    background-color: #333;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .project button:hover {
+    background-color: #555;
+  }
+  
+  /* Media Queries */
+  /* For tablets and smaller screens */
+  @media (max-width: 768px) {
+    .welcome-message {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+  
+    .welcome-message h1 {
+        font-size: 36px;
+    }
+  
+    .welcome-message p {
+        font-size: 16px;
+    }
+  
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+  
+    .navbar ul {
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    .navbar a {
+        font-size: 20px;
+    }
+  
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .welcome-message {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+  
+    .welcome-message h1 {
+        font-size: 28px;
+    }
+  
+    .welcome-message p {
+        font-size: 14px;
+    }
+  
+    .navbar ul {
+        flex-direction: row-reverse;
+    justify-content: center;
+    }
+  
+    .navbar a {
+        font-size: 18px;
+    }
+  
+  
+  
+    .project-section {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+  
+    .project-section div {
+        padding: 10px;
+        font-size: 18px;
+    }
+  
+    img {
+        height: 150px;
+        width: 150px;
+    }
+  }
+  
+  /* For mobile screens with max width 380px */
+  @media (max-width: 380px) {
+    .welcome-message {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+  
+    .welcome-message h1 {
+        font-size: 24px;
+    }
+  
+    .welcome-message p {
+        font-size: 12px;
+    }
+  
+    .navbar ul {
+        flex-direction: row;
+        justify-content: flex-end; 
+       
+    }
+  
+    .navbar a {
+        font-size: 16px;
+    }
+  
+   
+    .project-section {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+  
+    .project-section div {
+        padding: 8px;
+        font-size: 16px;
+    }
+  
+    img {
+        height: 120px;
+        width: 120px;
+    }
+  }
+  
