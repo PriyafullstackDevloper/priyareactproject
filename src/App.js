@@ -1,19 +1,13 @@
 import React from "react";
-import Imdb from "../src/R/Imdb.js";
-
-
-
+import './App.css';
+import Dashboard from "./component/DashboardPortfolio/Dashboard"; 
 
 function App() {
-    return (
-        <div>
-            
-           
-            <Imdb/>
-          
-
-        </div>
-    );
+  return (
+    <div className="App">
+      <Dashboard />
+    </div>
+  );
 }
 
 export default App;
