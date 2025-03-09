@@ -1,17 +1,23 @@
 import React, { Component } from "react";
 import "./Dashboard.css";
-import CoinDashboard from "./RJ_Coins/CoinDashboard";
-import Imdb from './Movies/Imdb';
+import ImdbDashboard from "./Movies/ImdbDashboard";
+import Table from "./Table/Table";
+import Actor from "./component/Actor/Actor";
+import CoinDashboard from "./Coins/CoinDashboard";
+import App from "../../App";
+
 
 export default class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
       projects: [
-        { name: "IMDb Movies", component: <Imdb /> },
-        { name: "Coin Game", component: <CoinDashboard /> },
+        { name: "ImdbDashboard", component: <ImdbDashboard /> },
+        { name: "Table", component: <Table /> },
+        { name: "Actor", component: <Actor /> },
+        { name: "CoinDashboard", component: <CoinDashboard /> }, // Uncomment if needed
       ],
-      selectedProject: null, // Initially no project is selected
+      selectedProject: null,
     };
   }
 
@@ -36,17 +42,12 @@ export default class Dashboard extends Component {
           ))}
         </div>
         <br />
-        {/* Render the selected project below */}
         <div className="Project-Content">
-          {this.state.selectedProject ? (
-            this.state.selectedProject
-          ) : (
-            <p style={{ color: "gray", fontSize: "20px" }}>
-              Select a project to view its content.
-            </p>
-          )}
+          {this.state.selectedProject ? this.state.selectedProject : <p>Select a project to display</p>}
         </div>
       </div>
     );
   }
+
 }
+export default App;

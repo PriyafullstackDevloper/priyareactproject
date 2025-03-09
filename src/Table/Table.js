@@ -59,4 +59,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables;
+export default Table;

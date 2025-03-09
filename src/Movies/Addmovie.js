@@ -1,14 +1,17 @@
 import React from "react";
-import "./Addmovie.css";
+import AddForm from "./AddForm";
+import "./Addmovie.css"
 
-
-export default class Addmovie extends React.Component {
-  render() {
-    return (
-      <div className="addmovie">
-        <button onClick={()=>this.props.openForm()} 
-          >Add Movie</button>
-      </div>
-    );
+class AddMovie extends React.Component {
+    render() {
+      return (
+        <div className="movie-container">
+          <button className="button" onClick={this.props.openForm}>Add Movie</button>
+          {this.props.showForm && <AddForm />}
+        </div>
+      );
+    }
   }
-}
+  
+  export default AddMovie;
+  
